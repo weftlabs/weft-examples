@@ -1,0 +1,19 @@
+{
+  "observedAt": "2026-08-29T00:45:29+02:00",
+  "sourceUrl": "https://luma.com/builders-day-2026",
+  "operationId": "mpp-operation-65-6",
+  "accessMethodId": "mpp-access-65-6-0-x402",
+  "providerStatus": 200,
+  "event": {
+    "title": "Builder's Day - AI Developer Conference",
+    "startDate": "Mon, 26 Oct 2026 16:00:00 GMT",
+    "endDate": "Tue, 27 Oct 2026 00:00:00 GMT",
+    "location": "690 Folsom St #100, San Francisco, California"
+  },
+  "receipt": {
+    "paymentStatus": "pending",
+    "paidUsd": "0.00",
+    "heldUsd": "0.0042",
+    "artifactId": 356
+  }
+}

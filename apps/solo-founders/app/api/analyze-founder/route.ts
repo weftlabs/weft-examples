@@ -82,13 +82,38 @@ export function httpErrorStatus(status: number | undefined) {
 
 export function isAllowedOrigin(request: Request) {
   const url = new URL(request.url);
-  const origin = request.headers.get("origin");
+  const originHeader = request.headers.get("origin");
   const json =
     request.headers.get("content-type")?.split(";", 1)[0] ===
     "application/json";
-  if (origin !== url.origin || !json) return false;
-  if (process.env.WEFT_PUBLIC === "1") return true;
-  return url.hostname === "127.0.0.1" || url.hostname === "localhost";
+  if (!originHeader || !json) return false;
+  let origin: URL;
+  try {
+    origin = new URL(originHeader);
+  } catch {
+    return false;
+  }
+  if (!sameLocalHost(url.hostname, origin.hostname)) return false;
+  if (
+    (origin.port || defaultPort(origin.protocol)) !==
+    (url.port || defaultPort(url.protocol))
+  ) {
+    return false;
+  }
+  if (process.env.WEFT_PUBLIC === "1") return origin.origin === url.origin;
+  return isLoopback(url.hostname);
+}
+
+function isLoopback(hostname: string) {
+  return hostname === "127.0.0.1" || hostname === "localhost";
+}
+
+function sameLocalHost(left: string, right: string) {
+  return left === right || (isLoopback(left) && isLoopback(right));
+}
+
+function defaultPort(protocol: string) {
+  return protocol === "https:" ? "443" : "80";
 }
 
 function isUuid(value: string) {

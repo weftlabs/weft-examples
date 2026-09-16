@@ -24,7 +24,18 @@ describe("isAllowedOrigin", () => {
         "content-type": "application/json",
       },
     });
+    const loopbackAlias = new Request(
+      "http://localhost:3000/api/analyze-founder",
+      {
+        method: "POST",
+        headers: {
+          origin: "http://127.0.0.1:3000",
+          "content-type": "application/json",
+        },
+      },
+    );
     expect(isAllowedOrigin(local)).toBe(true);
+    expect(isAllowedOrigin(loopbackAlias)).toBe(true);
     expect(isAllowedOrigin(crossSite)).toBe(false);
   });
 });

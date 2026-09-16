@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Solo founders on X",
+  title: "Founders Directory",
   description:
-    "Paste an X handle. Weft reads the public profile and returns a founder card.",
+    "Search public founder profiles. Paste an X handle or open a card.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

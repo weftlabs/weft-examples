@@ -85,7 +85,7 @@ describe("scoreVibe", () => {
       protected: true,
       tweets: 2,
     });
-    expect(hot.label).toBe("Solo founder energy");
+    expect(hot.label).toBe("Founder energy");
     expect(hot.score).toBeGreaterThan(cold.score);
     expect(cold.label).toBe("Weak founder signal");
   });
@@ -106,7 +106,7 @@ describe("analyzeFounder", () => {
     );
     expect(result.founder.name).toBe("Patrick Barattin");
     expect(result.founder.website).toBe("http://weftlabs.com");
-    expect(result.founder.vibe.label).toBe("Solo founder energy");
+    expect(result.founder.vibe.label).toBe("Founder energy");
     expect(result.receipt).toEqual({
       paymentStatus: "pending",
       paidUsd: "0.00",
@@ -115,7 +115,7 @@ describe("analyzeFounder", () => {
       txHash: "0xabc",
     });
     expect(shareCopy(result.founder, "http://127.0.0.1:3000")).toContain(
-      "I'm Patrick Barattin, I'm a solo founder",
+      "I'm Patrick Barattin, I'm a founder",
     );
   });
 

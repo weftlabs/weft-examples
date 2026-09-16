@@ -214,7 +214,7 @@ export function scoreVibe(input: {
 
   const label =
     score >= 70
-      ? "Solo founder energy"
+      ? "Founder energy"
       : score >= 40
         ? "Builder"
         : "Weak founder signal";
@@ -223,7 +223,7 @@ export function scoreVibe(input: {
 }
 
 export function shareCopy(founder: FounderCard, origin: string): string {
-  return `I'm ${founder.name}, I'm a solo founder\n${origin}/u/${founder.handle}`;
+  return `I'm ${founder.name}, I'm a founder\n${origin}/u/${founder.handle}`;
 }
 
 export async function analyzeFounder(

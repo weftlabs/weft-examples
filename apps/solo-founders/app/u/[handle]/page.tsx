@@ -10,8 +10,8 @@ export default async function ProfilePage({
     <main>
       <header className="masthead">
         <a className="brand" href="/">
-          <span className="brandMark">W</span>
-          <span>Solo founders</span>
+          <span className="brandMark">F</span>
+          <span>Founders Directory</span>
         </a>
         <a className="sourceLink" href="/">
           New card

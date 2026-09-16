@@ -136,14 +136,13 @@ export function FounderStudio({
   return (
     <section className="workspace">
       <div className="intro">
-        <p className="kicker">The trend, as a card</p>
+        <p className="kicker">Public index</p>
         <h1>
-          I'm <em>Name</em>, I'm a solo founder
+          Founders <em>Directory</em>
         </h1>
         <p>
-          Paste an X handle. This server pays x402 Atlas through Weft for the
-          public profile, then scores a vibe check. No X app. No LinkedIn
-          scrape.
+          Paste an X handle. Open a public founder card. No login. No X app.
+          No LinkedIn scrape.
         </p>
       </div>
 

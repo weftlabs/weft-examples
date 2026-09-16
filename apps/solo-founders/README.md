@@ -1,7 +1,8 @@
-# Solo founders on X
+# Founders Directory
 
-Paste an X handle and get a public founder card, a vibe check, and a Weft
-receipt. One Weft Account. No X developer app.
+Public site: [foundersdirectory.app](https://foundersdirectory.app).
+Paste an X handle and get a public founder card and a vibe check. One Weft
+Account. No X developer app. The package folder is still `solo-founders`.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weftlabs/weft-examples&env=WEFT_API_KEY,WEFT_PUBLIC&envDescription=Weft%20buyer%20API%20key%20(wk_*)%20plus%20WEFT_PUBLIC=1%20to%20allow%20hosted%20spend&project-name=solo-founders&repository-name=solo-founders)
 
@@ -46,5 +47,5 @@ A pending hold is not settled spend.
 - It will not create a second vendor account
 - It will not send email or LinkedIn messages
 - It will not scrape gated guest lists or store sample PII
-- It will not claim the person is a solo founder; the score is a vibe check
+- It will not claim the person is a founder; the score is a vibe check
   on public profile fields

@@ -2,13 +2,14 @@
   "name": "weft-examples",
   "private": true,
   "scripts": {
-    "build": "pnpm --filter luma-event-enrichment build",
+    "build": "pnpm --filter luma-event-enrichment build && pnpm --filter solo-founders build",
     "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
     "dev": "pnpm --filter luma-event-enrichment dev",
+    "dev:solo-founders": "pnpm --filter solo-founders dev",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "test": "pnpm --filter luma-event-enrichment test",
-    "typecheck": "pnpm --filter luma-event-enrichment typecheck"
+    "test": "pnpm --filter luma-event-enrichment test && pnpm --filter solo-founders test",
+    "typecheck": "pnpm --filter luma-event-enrichment typecheck && pnpm --filter solo-founders typecheck"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.10"

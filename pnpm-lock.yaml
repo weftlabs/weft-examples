@@ -46,6 +46,40 @@ importers:
         specifier: ^4.1.8
         version: 4.1.11(@types/node@26.4.0)(vite@8.2.2(@types/node@26.4.0))
 
+  apps/solo-founders:
+    dependencies:
+      '@weft-labs/sdk':
+        specifier: 0.20.0
+        version: 0.20.0(@x402/core@2.20.0)
+      '@x402/core':
+        specifier: 2.20.0
+        version: 2.20.0
+      next:
+        specifier: 16.3.2
+        version: 16.3.2(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      react:
+        specifier: 19.2.8
+        version: 19.2.8
+      react-dom:
+        specifier: 19.2.8
+        version: 19.2.8(react@19.2.8)
+    devDependencies:
+      '@types/node':
+        specifier: ^26.2.0
+        version: 26.4.0
+      '@types/react':
+        specifier: ^19.2.18
+        version: 19.2.18
+      '@types/react-dom':
+        specifier: ^19.2.4
+        version: 19.2.5(@types/react@19.2.18)
+      typescript:
+        specifier: ^7.0.2
+        version: 7.0.2
+      vitest:
+        specifier: ^4.1.8
+        version: 4.1.11(@types/node@26.4.0)(vite@8.2.2(@types/node@26.4.0))
+
 packages:
 
   '@biomejs/biome@2.5.10':

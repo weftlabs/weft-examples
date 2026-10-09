@@ -29,7 +29,7 @@ const response: FetchResponse = {
   paymentStatus: "pending",
   txHash: "0xabc",
   artifactId: 356,
-  merchant: {} as FetchResponse["merchant"],
+  protocol: "x402",
 };
 
 describe("parseLumaUrl", () => {

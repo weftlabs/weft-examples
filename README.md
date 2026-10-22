@@ -6,6 +6,7 @@ Runnable applications that show how to build with
 | Example | What it proves |
 |---|---|
 | [`luma-event-enrichment`](apps/luma-event-enrichment) | Turn a public Luma event page into structured data with one bounded paid request. |
+| [`solo-founders`](apps/solo-founders) | Founders Directory: paste an X handle, get a public founder card and vibe check with one bounded paid request. |
 
 ## Run locally
 
@@ -29,4 +30,3 @@ mise exec -- pnpm check
 ## License
 
 [MIT](LICENSE)
-Runnable applications that show how to build with Weft

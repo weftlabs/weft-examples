@@ -3,8 +3,8 @@
 Runnable applications that show how to build with
 [@weft-labs/sdk](https://www.npmjs.com/package/@weft-labs/sdk).
 
-| Example | What it proves |
-|---|---|
+| Example                                               | What it proves                                                                    |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------- |
 | [`luma-event-enrichment`](apps/luma-event-enrichment) | Turn a public Luma event page into structured data with one bounded paid request. |
 
 ## Run locally
